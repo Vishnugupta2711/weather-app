@@ -27,8 +27,10 @@ document.getElementById('getWeatherBtn').addEventListener('click', () => {
     }
     
     function displayWeatherData(data) {
+        const iconUrl = data.current.condition.icon;
         const weatherData = `
             <h2>Weather in ${data.location.name}, ${data.location.country}</h2>
+            <img src="${iconUrl}" alt="Weather Icon">
             <p><strong>Temperature:</strong> ${data.current.temp_c}°C</p>
             <p><strong>Condition:</strong> ${data.current.condition.text}</p>
             <p><strong>Humidity:</strong> ${data.current.humidity}%</p>
