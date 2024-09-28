@@ -7,18 +7,23 @@
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #1c1c1c;
-}
+    background-image: url('https://th.bing.com/th/id/R.3c4b078af7284e4f772eb1daea326199?rik=9vLOUyA9%2fjVqyg&riu=http%3a%2f%2fi.kinja-img.com%2fgawker-media%2fimage%2fupload%2ft_original%2fis9l7titozic2s3xpqjk.gif&ehk=PYzKzzE3pOb5ET%2bIARtlj%2bxm1CU3BiYfbEPWsSUZnG8%3d&risl=1&pid=ImgRaw&r=0'); 
+    background-size: cover; 
+    background-position: center center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
 
+
+}
 body {
     display: flex;
-    justify-content: center;  /* Centers the container horizontally */
-    align-items: center;      /* Centers the container vertically */
-    height: 100vh;            /* Ensures body takes the full viewport height */
+    justify-content: center;  
+    align-items: center;     
+    height: 100vh;            
 }
 
 .container {
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Adjust opacity by changing the last value (0.8) */
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -26,7 +31,6 @@ body {
     width: 350px;
     transition: all 0.3s ease;
 }
-
 h1 {
     color: #fff;
     font-size: 28px;
@@ -114,20 +118,20 @@ footer {
 /* Responsive styling */
 @media (max-width: 768px) {
     .container {
-        width: 90%;  /* Adjust container width for tablets and smaller screens */
+        width: 90%;  
     }
 
     h1 {
-        font-size: 24px;  /* Smaller font size for headings on smaller devices */
+        font-size: 24px;  
     }
 
     #cityInput {
-        width: 70%;  /* Adjust input width on smaller screens */
+        width: 70%;  
     }
 
     button {
         padding: 8px 12px;
-        font-size: 14px;  /* Slightly smaller buttons for mobile */
+        font-size: 14px; 
     }
 
     .weather-data h2 {
@@ -141,21 +145,20 @@ footer {
 
 @media (max-width: 480px) {
     .container {
-        width: 100%;  /* Full width for very small screens */
-        padding: 20px;  /* Less padding on smaller screens */
+        width: 100%;  
+        padding: 20px; 
     }
 
     h1 {
-        font-size: 22px;  /* Adjust heading for mobile */
-    }
+        font-size: 22px; 
 
     #cityInput {
-        width: 60%;  /* Narrower input field */
+        width: 60%;  
     }
 
     button {
         padding: 8px 10px;
-        font-size: 12px;  /* Smaller button for mobile */
+        font-size: 12px; 
     }
 
     .weather-data h2 {
@@ -163,14 +166,15 @@ footer {
     }
 
     .weather-data img {
-        width: 50px;  /* Smaller image on mobile */
+        width: 50px;  
     }
 
     .error {
-        font-size: 16px;  /* Adjust error font size */
+        font-size: 16px; 
     }
 
     footer {
-        padding: 0.8rem;  /* Less padding in footer */
+        padding: 0.8rem;  
     }
+}
 }
