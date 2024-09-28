@@ -110,3 +110,67 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;  /* Adjust container width for tablets and smaller screens */
+    }
+
+    h1 {
+        font-size: 24px;  /* Smaller font size for headings on smaller devices */
+    }
+
+    #cityInput {
+        width: 70%;  /* Adjust input width on smaller screens */
+    }
+
+    button {
+        padding: 8px 12px;
+        font-size: 14px;  /* Slightly smaller buttons for mobile */
+    }
+
+    .weather-data h2 {
+        font-size: 20px;
+    }
+
+    .weather-data img {
+        width: 60px;  /* Reduce icon size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;  /* Full width for very small screens */
+        padding: 20px;  /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 22px;  /* Adjust heading for mobile */
+    }
+
+    #cityInput {
+        width: 60%;  /* Narrower input field */
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 12px;  /* Smaller button for mobile */
+    }
+
+    .weather-data h2 {
+        font-size: 18px;
+    }
+
+    .weather-data img {
+        width: 50px;  /* Smaller image on mobile */
+    }
+
+    .error {
+        font-size: 16px;  /* Adjust error font size */
+    }
+
+    footer {
+        padding: 0.8rem;  /* Less padding in footer */
+    }
+}
