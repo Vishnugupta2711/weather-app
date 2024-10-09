@@ -27,8 +27,10 @@ A simple and responsive weather app built using HTML, CSS, and JavaScript. This 
 ![weatherapp](https://github.com/user-attachments/assets/6de1f7bd-8445-42ca-928e-c7e8da2d89f4)
 
 ## Installation & Setup
+
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/Vishnugupta2711/weather-app.git
+
 
